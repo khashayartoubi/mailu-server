@@ -56,8 +56,6 @@ services:
       options:
         tag: mailu-resolver
     restart: always
-    volumes:
-      - "./overrides/unbound/unbound.conf:/etc/unbound/unbound.conf.d/custom.conf:ro"
     networks:
       default:
         ipv4_address: 192.168.203.254

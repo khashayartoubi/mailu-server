@@ -58,3 +58,12 @@ Thumbs.db
 
 # Keep overrides/ tracked: deployment configuration, not runtime data.
 # Review overrides for credentials before committing.
+
+# Server-local recovery overrides and generated resolver state
+docker-compose.override.yml
+docker-compose.override.yml.*
+/overrides/admin/
+/overrides/unbound/state/
+/overrides/unbound/*.local
+/overrides/unbound/*.before-*
+/overrides/unbound/*.mailu-backup-*
