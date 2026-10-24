@@ -1,0 +1,60 @@
+# Local environment and credentials
+.env
+.env.*
+!.env.example
+/mailu.env
+/mailu.env.*
+!/mailu.env.example
+/secrets/
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Mailu persistent bind mounts: mail, accounts, keys, queues and caches
+/certs/
+/data/
+/dav/
+/dkim/
+/filter/
+/mail/
+/mailqueue/
+/webmail/
+/mailu/
+
+# Databases, logs and backups
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.sqlite3-*
+*.rdb
+*.log
+*.log.*
+/backups/
+/backup/
+*.bak
+*.old
+*.orig
+*.dump
+*.sql
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+/tmp/
+
+# Local diagnostic output
+/olvectl query *
+
+# Editors and operating systems
+.idea/
+.vscode/
+*~
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Keep overrides/ tracked: deployment configuration, not runtime data.
+# Review overrides for credentials before committing.
